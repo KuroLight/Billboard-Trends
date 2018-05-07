@@ -1,5 +1,5 @@
 # Billboard-Trends
-N parts are planned to do:
+## N parts are planned to do:
 
 1. A powerful Spider-man gets lyrics.json, including artists, titles, lyrics, genres, etc.
 2. A smart Iron-man does the data analysis job.
@@ -7,7 +7,7 @@ N parts are planned to do:
 4. Last but not the least, a magical Dr. Strange contributes the magic. 
 
 
-References:
+## References:
 
 1. https://www.youtube.com/watch?v=vdji9fLqyB8
 2. https://www.youtube.com/watch?v=IabHTp06BLs
