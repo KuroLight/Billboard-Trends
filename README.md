@@ -35,6 +35,29 @@ only edit this two lines:
 2. boyu:   80-90, 70-80
 3. yongfa: 60-70, 50-60
 
+## Team work:
+1. shiyao:
+1) data preprocessing
+
+artist, clean lyrics, drop stopwords, stemming, pos_tag
+
+2) vocabulary 改变
+    1. graph 1: vocabulary, adj, noun count 变化
+    2. graph 2: artists: vocabulary, adj, noun count 变化
+    3. graph 3: vocabulary -> wordcloud
+    4. graph 4: top 10, top 50, top 100  vocabulary 占比分析，歌词长度 distribution 的长度分析
+    5. graph 5: 不同年代的：歌词数量，高频word, 高 tf-idf 统计对比
+    6. graph 7: case study: prince or micheal jackson
+3) TBD 
+2. boyu: sentiment analysis
+NRC Lexicon: 参考 https://www.kaggle.com/devisangeetha/sing-a-song-lyrics-is-here/notebook
+
+3. yongfa: clustering
+Kmeans:
+1) artist
+2) song
+2) generation
+
 ## token
 create environmrnt variable 'GENIUS_TOKEN':
 
