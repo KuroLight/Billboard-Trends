@@ -83,6 +83,7 @@ def get_lyrics_from_api_path(api_path):
     song_real_url = 'http://genius.com' + response['response']['song']['path']
 
     song_content = get_raw_content_from_url(song_real_url)
+
     song_soup = BeautifulSoup(song_content, 'html.parser')
     [s.extract() for s in song_soup('script')]
     lyrics = song_soup.find('div', class_='lyrics').get_text()
@@ -231,7 +232,7 @@ def main():
     # print('valid lyrics num:', chart_hot100_20180317.valid_lyrics_num)
 
     songs_in_year50 = []
-    for year in range(2017, 2019):
+    for year in range(2018, 2019):
         for week in get_all_saturdays_before_this_week(year):
             if not os.path.exists('lyrics'): os.mkdir('lyrics')
             if os.path.exists('lyrics/billboard_hot100_%s.json' % (week)):
