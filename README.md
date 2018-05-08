@@ -29,16 +29,13 @@ only edit this two lines:
 3. https://www.kaggle.com/devisangeetha/sing-a-song-lyrics-is-here/notebook
 4. https://github.com/rasbt/musicmood
 
-<<<<<<< HEAD
 
 ## span splits:
 shiyao: 00-09, 90-00
 boyu:   80-90, 70-80
 yongfa: 60-70, 50-60
 
-=======
 ## token
 create environmrnt variable 'GENIUS_TOKEN':
 
     5Oucnd-RuL_qExoPjSDQ5PDsWwXxxzQf2PUbyHIKlUQUEpnE3e6lccOAbpe-X5D5
->>>>>>> 191b39adc4b02f87c9ccba5c3dff233b3656bf4b
