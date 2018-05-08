@@ -12,4 +12,11 @@
 1. https://www.youtube.com/watch?v=vdji9fLqyB8
 2. https://www.youtube.com/watch?v=IabHTp06BLs
 3. https://www.youtube.com/watch?v=t5-a5WqbFnE
-4. more...
+
+
+## Tutorials:
+1. https://www.kaggle.com/rahulvks/nlp-billboard-nb-1
+2. https://www.datacamp.com/community/tutorials/R-nlp-machine-learning
+3. https://www.kaggle.com/devisangeetha/sing-a-song-lyrics-is-here/notebook
+4. https://github.com/rasbt/musicmood
+
