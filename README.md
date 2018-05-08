@@ -30,6 +30,6 @@ only edit this two lines:
 4. https://github.com/rasbt/musicmood
 
 ## token
-create 'token.txt' in the same directory of spider-man.py including content:
+create environmrnt variable 'GENIUS_TOKEN':
 
     5Oucnd-RuL_qExoPjSDQ5PDsWwXxxzQf2PUbyHIKlUQUEpnE3e6lccOAbpe-X5D5
