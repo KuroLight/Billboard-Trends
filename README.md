@@ -1,4 +1,13 @@
 # Billboard-Trends
+
+## To Run
+only edit this two lines:
+
+    START_YEAR = 2009  # inclusive
+
+    END_YEAR = 2010  # exclusive
+
+
 ## N parts are planned to do:
 
 1. A powerful Spider-man gets lyrics.json, including artists, titles, lyrics, genres, etc.
@@ -20,3 +29,7 @@
 3. https://www.kaggle.com/devisangeetha/sing-a-song-lyrics-is-here/notebook
 4. https://github.com/rasbt/musicmood
 
+## token
+create 'token.txt' in the same directory of spider-man.py including content:
+
+    5Oucnd-RuL_qExoPjSDQ5PDsWwXxxzQf2PUbyHIKlUQUEpnE3e6lccOAbpe-X5D5

@@ -7,8 +7,20 @@ from __future__ import print_function
 import re, requests, os, json
 from bs4 import BeautifulSoup
 
-token = os.environ.get('GENIUS_TOKEN')
+
+# token = os.environ.get('GENIUS_TOKEN')
+def get_token(file_path):
+    with open(file_path, 'r') as f:
+        token = f.read().replace('\n', '')
+        return token
+
+
+token = get_token('token.txt')
 HEADERS = {'Authorization': 'Bearer %s' % (token)}
+
+# edit here
+START_YEAR = 2009  # inclusive
+END_YEAR = 2010  # exclusive
 
 
 # https://bigishdata.com/2016/09/27/getting-song-lyrics-from-geniuss-api-scraping/
@@ -76,7 +88,6 @@ def get_song_api_path_from_title_and_artist(i, title, artist):
 
 
 def get_lyrics_from_api_path(api_path):
-
     if not api_path: return None
     song_api_url = 'http://api.genius.com' + api_path
     response = requests.get(song_api_url, headers=HEADERS).json()
@@ -201,6 +212,7 @@ def get_all_saturdays_before_this_week(year):
             return
         d += timedelta(days=7)
 
+
 def get_one_week():
     if not os.path.exists('test'): os.mkdir('test')
 
@@ -222,6 +234,7 @@ def get_one_week():
             all_songs = len(songs_in_oneweek.songs)
             print('valid/all = %s/%s' % (valid_songs, all_songs))
 
+
 def main():
     print('Getting billboard songs...')
     # chart_hot100_20180317 = BillboardChart(chart_name='hot-100', date='2018-03-15')
@@ -232,7 +245,7 @@ def main():
     # print('valid lyrics num:', chart_hot100_20180317.valid_lyrics_num)
 
     songs_in_year50 = []
-    for year in range(2018, 2019):
+    for year in range(START_YEAR, END_YEAR):
         for week in get_all_saturdays_before_this_week(year):
             if not os.path.exists('lyrics'): os.mkdir('lyrics')
             if os.path.exists('lyrics/billboard_hot100_%s.json' % (week)):
