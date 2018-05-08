@@ -4,18 +4,19 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-import re, requests, os, json
+import re
+import requests
+import os
+import json
 from bs4 import BeautifulSoup
 
 
-# token = os.environ.get('GENIUS_TOKEN')
-def get_token(file_path):
-    with open(file_path, 'r') as f:
-        token = f.read().replace('\n', '')
-        return token
-
-
-token = get_token('token.txt')
+token = os.environ.get('GENIUS_TOKEN')
+# def get_token(file_path):
+#     with open(file_path, 'r') as f:
+#         token = f.read().replace('\n', '')
+#         return token
+# token = get_token('token.txt')
 HEADERS = {'Authorization': 'Bearer %s' % (token)}
 
 # edit here
@@ -88,7 +89,8 @@ def get_song_api_path_from_title_and_artist(i, title, artist):
 
 
 def get_lyrics_from_api_path(api_path):
-    if not api_path: return None
+    if not api_path:
+        return None
     song_api_url = 'http://api.genius.com' + api_path
     response = requests.get(song_api_url, headers=HEADERS).json()
     song_real_url = 'http://genius.com' + response['response']['song']['path']
@@ -214,12 +216,14 @@ def get_all_saturdays_before_this_week(year):
 
 
 def get_one_week():
-    if not os.path.exists('test'): os.mkdir('test')
+    if not os.path.exists('test'):
+        os.mkdir('test')
 
     songs_in_year50 = []
     for year in range(2017, 2018):
         for i, week in enumerate(get_all_saturdays_before_this_week(year)):
-            if i > 0: break
+            if i > 0:
+                break
             if os.path.exists('test/billboard_hot100_%s.json' % (week)):
                 continue
 
@@ -247,7 +251,8 @@ def main():
     songs_in_year50 = []
     for year in range(START_YEAR, END_YEAR):
         for week in get_all_saturdays_before_this_week(year):
-            if not os.path.exists('lyrics'): os.mkdir('lyrics')
+            if not os.path.exists('lyrics'):
+                os.mkdir('lyrics')
             if os.path.exists('lyrics/billboard_hot100_%s.json' % (week)):
                 continue
 

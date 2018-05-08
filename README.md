@@ -38,7 +38,7 @@ yongfa: 60-70, 50-60
 
 =======
 ## token
-create 'token.txt' in the same directory of spider-man.py including content:
+create environmrnt variable 'GENIUS_TOKEN':
 
     5Oucnd-RuL_qExoPjSDQ5PDsWwXxxzQf2PUbyHIKlUQUEpnE3e6lccOAbpe-X5D5
 >>>>>>> 191b39adc4b02f87c9ccba5c3dff233b3656bf4b
