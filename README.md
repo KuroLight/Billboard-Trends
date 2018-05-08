@@ -52,11 +52,10 @@ artist, clean lyrics, drop stopwords, stemming, pos_tag
 2. boyu: sentiment analysis
 NRC Lexicon: 参考 https://www.kaggle.com/devisangeetha/sing-a-song-lyrics-is-here/notebook
 
-3. yongfa: clustering
-Kmeans:
-1) artist
-2) song
-2) generation
+3. yongfa: clustering, Kmeans:
+    1) artist
+    2) song
+    3) through year
 
 ## token
 create environmrnt variable 'GENIUS_TOKEN':
