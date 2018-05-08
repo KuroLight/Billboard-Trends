@@ -20,3 +20,9 @@
 3. https://www.kaggle.com/devisangeetha/sing-a-song-lyrics-is-here/notebook
 4. https://github.com/rasbt/musicmood
 
+
+## span splits:
+shiyao: 00-09, 90-00
+boyu:   80-90, 70-80
+yongfa: 60-70, 50-60
+
