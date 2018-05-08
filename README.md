@@ -30,12 +30,12 @@ only edit this two lines:
 4. https://github.com/rasbt/musicmood
 
 
-## span splits:
-1. shiyao: 00-09, 90-00
-2. boyu:   80-90, 70-80
-3. yongfa: 60-70, 50-60
-
 ## Team work:
+0. data collection
+    1. shiyao: 00-09, 90-00
+    2. boyu:   80-90, 70-80
+    3. yongfa: 60-70, 50-60
+
 1. shiyao:
 1) data preprocessing
 
@@ -52,7 +52,15 @@ artist, clean lyrics, drop stopwords, stemming, pos_tag
 2. boyu: sentiment analysis
 NRC Lexicon: 参考 https://www.kaggle.com/devisangeetha/sing-a-song-lyrics-is-here/notebook
 
-3. yongfa: clustering, Kmeans:
+3. yongfa: 
+    pipeline:
+    1. load jsons
+    2. remove stopwords, stem, and tokenize
+    3. tf-idf and calculate cosine similarity
+    4. k-means clustering
+    5. 
+
+    clustering, Kmeans:
     1) artist
     2) song
     3) through year
