@@ -31,9 +31,9 @@ only edit this two lines:
 
 
 ## span splits:
-shiyao: 00-09, 90-00
-boyu:   80-90, 70-80
-yongfa: 60-70, 50-60
+1. shiyao: 00-09, 90-00
+2. boyu:   80-90, 70-80
+3. yongfa: 60-70, 50-60
 
 ## token
 create environmrnt variable 'GENIUS_TOKEN':
