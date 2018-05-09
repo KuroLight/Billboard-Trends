@@ -20,8 +20,13 @@ token = os.environ.get('GENIUS_TOKEN')
 HEADERS = {'Authorization': 'Bearer %s' % (token)}
 
 # edit here
+<<<<<<< HEAD
 START_YEAR = 1983  # inclusive
 END_YEAR = 1990  # exclusive
+=======
+START_YEAR = 1952  # inclusive
+END_YEAR = 1970  # exclusive
+>>>>>>> 8056936a5e646210118e901f66e10e6db76e9a07
 
 
 # https://bigishdata.com/2016/09/27/getting-song-lyrics-from-geniuss-api-scraping/
