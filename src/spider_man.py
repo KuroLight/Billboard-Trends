@@ -269,7 +269,7 @@ def main():
                 print('valid/all = %s/%s' % (valid_songs, all_songs))
             except:
                 pass
-            
+
     # get_one_week()
 
     # valid_songs = sum([songs_in_oneweek.valid_lyrics_num for songs_in_oneweek in
