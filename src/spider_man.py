@@ -20,8 +20,8 @@ token = os.environ.get('GENIUS_TOKEN')
 HEADERS = {'Authorization': 'Bearer %s' % (token)}
 
 # edit here
-START_YEAR = 2009  # inclusive
-END_YEAR = 2010  # exclusive
+START_YEAR = 1983  # inclusive
+END_YEAR = 1990  # exclusive
 
 
 # https://bigishdata.com/2016/09/27/getting-song-lyrics-from-geniuss-api-scraping/
@@ -251,21 +251,25 @@ def main():
     songs_in_year50 = []
     for year in range(START_YEAR, END_YEAR):
         for week in get_all_saturdays_before_this_week(year):
-            if not os.path.exists('lyrics'):
-                os.mkdir('lyrics')
-            if os.path.exists('lyrics/billboard_hot100_%s.json' % (week)):
-                continue
+            try:
+                if not os.path.exists('lyrics'):
+                    os.mkdir('lyrics')
+                if os.path.exists('lyrics/billboard_hot100_%s.json' % (week)):
+                    continue
 
-            print('\nweek - %s' % (week))
-            songs_in_oneweek = BillboardChart(chart_name='hot-100', date=week)
-            songs_in_oneweek.load_chart_songs()
-            songs_in_year50.append(songs_in_oneweek)
-            with open('lyrics/billboard_hot100_%s.json' % (week), 'wt') as f:
-                json.dump(songs_in_oneweek.songs, f, sort_keys=True, indent=4)
+                print('\nweek - %s' % (week))
+                songs_in_oneweek = BillboardChart(chart_name='hot-100', date=week)
+                songs_in_oneweek.load_chart_songs()
+                songs_in_year50.append(songs_in_oneweek)
+                with open('lyrics/billboard_hot100_%s.json' % (week), 'wt') as f:
+                    json.dump(songs_in_oneweek.songs, f, sort_keys=True, indent=4)
 
-            valid_songs = songs_in_oneweek.valid_lyrics_num
-            all_songs = len(songs_in_oneweek.songs)
-            print('valid/all = %s/%s' % (valid_songs, all_songs))
+                valid_songs = songs_in_oneweek.valid_lyrics_num
+                all_songs = len(songs_in_oneweek.songs)
+                print('valid/all = %s/%s' % (valid_songs, all_songs))
+            except:
+                pass
+            
     # get_one_week()
 
     # valid_songs = sum([songs_in_oneweek.valid_lyrics_num for songs_in_oneweek in
