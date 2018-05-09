@@ -28,6 +28,7 @@ only edit this two lines:
 2. https://www.datacamp.com/community/tutorials/R-nlp-machine-learning
 3. https://www.kaggle.com/devisangeetha/sing-a-song-lyrics-is-here/notebook
 4. https://github.com/rasbt/musicmood
+5. http://brandonrose.org/clustering#K-means-clustering 
 
 
 ## Team work:
