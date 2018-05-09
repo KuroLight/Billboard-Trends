@@ -29,6 +29,7 @@ only edit this two lines:
 3. https://www.kaggle.com/devisangeetha/sing-a-song-lyrics-is-here/notebook
 4. https://github.com/rasbt/musicmood
 5. http://brandonrose.org/clustering#K-means-clustering 
+6. https://pudding.cool/2017/05/song-repetition/
 
 
 ## Team work:
