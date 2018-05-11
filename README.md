@@ -30,6 +30,7 @@ only edit this two lines:
 4. https://github.com/rasbt/musicmood
 5. http://brandonrose.org/clustering#K-means-clustering 
 6. https://pudding.cool/2017/05/song-repetition/
+7. https://www.kaggle.com/rcushen/a-basic-implementation-of-sentiment-analysis
 
 
 ## Team work:
@@ -70,4 +71,4 @@ NRC Lexicon: 参考 https://www.kaggle.com/devisangeetha/sing-a-song-lyrics-is-h
 ## token
 create environmrnt variable 'GENIUS_TOKEN':
 
-    5Oucnd-RuL_qExoPjSDQ5PDsWwXxxzQf2PUbyHIKlUQUEpnE3e6lccOAbpe-X5D5
+    please ask yongfatS
